@@ -23,6 +23,9 @@
             i {
                 font-family: Geneva;
             }
+            #numbers, #operations {
+                border: 2px solid black;
+            }
         </style>
 
         <script>
@@ -96,7 +99,8 @@
         <div class="container shadow p-3 mb-5 bg-transparent rounded" id="buttons">
         
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-2" id="numbers">
+                    
+                    <div class="col-md-2 col-sm-4 col-6" id="numbers">
                         <button type="button" class="btn btn-outline-primary buttons" data-value="1">1</button>
                         <button type="button" class="btn btn-outline-primary buttons" data-value="2">2</button>
                         <button type="button" class="btn btn-outline-primary buttons" data-value="3">3</button>
@@ -116,7 +120,7 @@
                         
                     </div>
                     
-                    <div class="col-1" id="operations">
+                    <div class="col-md-1 col-sm-2 col-3" id="operations">
                             <button type="button" class="btn btn-outline-success buttons" data-value="+">+</button>
                             <br>
                             <button type="button" class="btn btn-outline-success buttons" data-value="-">-</button>
@@ -126,7 +130,7 @@
                             <button type="button" class="btn btn-outline-success buttons" data-value="/">/</button>
                     </div>
                     
-                    <div class="col-1" id="ans">
+                    <div class="col-md-1 col-sm-1 col-3" id="ans">
                         <button type="button" class="btn btn-info buttons" data-value="=">=</button>
                         <br>
                         <button type="button" class="btn btn-info buttons" data-value="Del">Del</button>
