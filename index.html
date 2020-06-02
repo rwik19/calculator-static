@@ -23,6 +23,9 @@
             i {
                 font-family: Geneva;
             }
+            button {
+                margin: 3px;
+            }
         </style>
 
         <script>
@@ -88,16 +91,16 @@
     
     <body>
         <div class="container" id="heading">
-            <h1 class="text-center">Four Function Calculator</h1>
+            <h2 class="text-center">Four Function Calculator</h2>
         </div>
         <div class="container shadow-lg p-3 mb-5 bg-dark rounded" id="display">
-            <h4 id="expression"><i>Expression will be displayed here.</i></h4>
+            <h5 id="expression"><i>Expression will be displayed here.</i></h5>
         </div>
         <div class="container shadow p-3 mb-5 bg-transparent rounded" id="buttons">
         
                 <div class="row align-items-center justify-content-center">
                     
-                    <div class="col-md-2 col-sm-4 col-6" id="numbers">
+                    <div class="col-md-2 col-sm-5 col-6" id="numbers">
                         <button type="button" class="btn btn-outline-primary buttons" data-value="1">1</button>
                         <button type="button" class="btn btn-outline-primary buttons" data-value="2">2</button>
                         <button type="button" class="btn btn-outline-primary buttons" data-value="3">3</button>
@@ -122,9 +125,9 @@
                             <br>
                             <button type="button" class="btn btn-outline-success buttons" data-value="-">-</button>
                             <br>
-                            <button type="button" class="btn btn-outline-success buttons" data-value="*">*</button>
+                            <button type="button" class="btn btn-outline-success buttons" data-value="*">&#215</button>
                             <br>
-                            <button type="button" class="btn btn-outline-success buttons" data-value="/">/</button>
+                            <button type="button" class="btn btn-outline-success buttons" data-value="/">&#247</button>
                     </div>
                     
                     <div class="col-md-1 col-sm-1 col-3" id="ans">
