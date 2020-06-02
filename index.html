@@ -21,7 +21,7 @@
                 color: #875b59;
             }
             i {
-                font-family: Geneva;
+                font-family: Cambria;
             }
             button {
                 margin: 3px;
@@ -58,7 +58,7 @@
                             else {
                                 try {
                                     mem = expression;
-                                    expression = String(eval(expression));
+                                    expression = eval(expression).toFixed(4);
                                 }
                                 catch(err) {
                                     expression = 'Error';
@@ -91,16 +91,16 @@
     
     <body>
         <div class="container" id="heading">
-            <h2 class="text-center">Four Function Calculator</h2>
+            <h2 class="text-center"><b>Calculator</b></h2>
         </div>
         <div class="container shadow-lg p-3 mb-5 bg-dark rounded" id="display">
             <h5 id="expression"><i>Expression will be displayed here.</i></h5>
         </div>
-        <div class="container shadow p-3 mb-5 bg-transparent rounded" id="buttons">
+        <div class="container shadow p-3 mb-5 bg-white rounded" id="buttons">
         
                 <div class="row align-items-center justify-content-center">
                     
-                    <div class="col-md-2 col-sm-5 col-6" id="numbers">
+                    <div class="col-md-3 col-sm-5 col-6" id="numbers">
                         <button type="button" class="btn btn-outline-primary buttons" data-value="1">1</button>
                         <button type="button" class="btn btn-outline-primary buttons" data-value="2">2</button>
                         <button type="button" class="btn btn-outline-primary buttons" data-value="3">3</button>
@@ -142,6 +142,9 @@
             <div class="container alert alert-success" id="history">
                 <h3>History</h3>
                 <div id="memory"></div>
+            </div>
+            <div class="container alert alert-danger" id="history">
+                <h7>NOTE: Use ** for exponentiation. For example, 5&#178 can be written as 5**2.</h7>
             </div>
     </body>
 
